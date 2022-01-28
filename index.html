@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/Images/logo.ico">
+    <link rel="icon" type="image/x-icon" href="Images/logo.ico">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+
     <title>Tech 19 | Mechanical 3d Modelling | Israel</title>
 
 </head>
+
 <body>
-    <img src="/Images/tech19First.jpg" alt="Home">
-    <img src="/Images/logo.jpg" alt="Tech19">
-    <p class="firstPage">Tech 19 provides technical innovative solutions in fields of Software, Mechanical 
-        design & IT, The company delivers professional services through turnkey end to end solutions with focus on 
-        quality and customer satisfaction.
-    </p>
-    <button id="contactUs">CONTACT US</button>
-    <h1 class="aboutUsTitle">ABOUT US</h1>
-    <P class="aboutDescription">Tech19 is based in Yeruham, southern Israel, and part of ‘Group 19’ initiated by Hana Rado Israeli social entrepreneur. 
-        The key objective is to promote outsourcing services from peripheral areas to companies situated in the center 
-        region of Israel. Thus, we bring the periphery closer to the center by 
-        providing solutions using advanced technologies.</P>
-    <div>
-        <div>
-            <img src="/Images/Inbar.jpg" alt="Inbar Cohen">
-            <h2 class="founders">Inbar Cohen</h2>
-            <p class="foundersDescription">CEO at Tech19</p>
-        </div>
-        <div>
-            <img src="/Images/Hana.jpg" alt="Hana Rado">
-            <h2 class="founders">Hana Rado</h2>
-            <p class="foundersDescription">Founder & President Group 19</p>
+        <!--introduction first image-->
+    <div class="section1">
+        <img class="logo" src="Images/logo.jpg" alt="Tech19">
+        <p class="introduction">Tech 19 provides technical innovative solutions in fields of<br>Software, Mechanical
+            design & IT, The company delivers<br>professional services through turnkey end to end solutions<br>with
+            focus on
+            quality and customer satisfaction.
+        </p>
+        <button class="contactUs">CONTACT US</button>
+    </div>
+        <!--about us-->
+    <div class="aboutUs">
+        <h1 class="aboutUsTitle">ABOUT US</h1>
+        <P class="aboutDescription">Tech19 is based in Yeruham, southern Israel, and part of ‘Group 19’<br> initiated by
+            Hana Rado Israeli social entrepreneur.
+            The key objective is<br> to promote outsourcing services from peripheral areas to companies<br> situated in
+            the center
+            region of Israel. Thus, we bring the periphery<br> closer to the center by
+            providing solutions using advanced technologies.</P>
+        <div class="foundersInfo">
+            <div>
+                <img class="founderPic" src="Images/Inbar.jpg" alt="Inbar Cohen">
+                <h2 class="foundersName">Inbar Cohen</h2>
+                <p class="foundersDescription">CEO at Tech19</p>
+            </div>
+            <div>
+                <img class="founderPic" src="Images/Hana.jpg" alt="Hana Rado">
+                <h2 class="foundersName">Hana Rado</h2>
+                <p class="foundersDescription">Founder & President<br> Group 19</p>
+            </div>
         </div>
     </div>
-    <div>
-        <h1>SOLUTIONS WE PROVIDE</h1>
+        <!--solutions-->
+    <div class="solutionsContainer">
+        <p class="solutionProvide">SOLUTIONS WE PROVIDE</p>
     </div>
-    <div>
-        <div class="solutionsProvide">
-            <i class="fas fa-cog"></i>
+    <div class="solutions">
+        <div class="service">
+            <i class="fas fa-5x  fa-cog"></i>
             <h2 class="typeSolution">Mechanical 3d modelling</h2>
             <ul>
                 <li>Mechanical research</li>
@@ -56,21 +69,22 @@
                 <li>Prototype design and construction</li>
             </ul>
         </div>
-        <div class="solutionsProvide">
-            <i class="fas fa-laptop-code"></i>
+        <div class="service">
+            <i class="fas fa-5x fa-laptop-code"></i>
             <h2 class="typeSolution">SW Development & Testing</h2>
             <ul>
-                <li>Frontend development –
-                    React, C#, Angular                    
-                    Automation testing</li>
+                <li>Frontend development –<br>
+                    React, C#, Angular
+                </li>
+                <li>Automation testing</li>
                 <li>Quality Assurance</li>
-                <li>Build and implement QA methodology & processes</li>
+                <li>Build and implement QA<br> methodology & processes</li>
                 <li>Functional testing</li>
                 <li>Performance testing</li>
             </ul>
         </div>
-        <div class="solutionsProvide">
-            <i class="fas fa-headphones-alt"></i>
+        <div class="service">
+            <i class="fas fa-5x fa-headphones-alt"></i>
             <h2 class="typeSolution">IT Support</h2>
             <ul>
                 <li>Network operation center (NOC)</li>
@@ -78,90 +92,91 @@
             </ul>
         </div>
     </div>
-    <div>
-        <img src="/Images/openPositions.jpg" alt="Open Positions">
-        <div>
-            <h2>Open positions</h2>
-            <p>Are you ready to shape the world of software innovative solutions with us? Join the Tech 19 to be
+    <!--open positions-->
+    <div class="positionContainer">
+       <div>
+        <div class="container1">
+            <h2 class="openPosition">Open positions</h2>
+            <p class="motivation">Are you ready to shape the world of software innovative solutions with us? Join the Tech 19 to be
                 a part of a team where you can make a difference!</p>
         </div>
         <div>
-            <h3>QA Engineer</h3>
-            <p>Proven experience of 2-3 years in functional testing 
-
-                Experience with validations tools and methodologies 
-                
-                ISTQB certified - Advantage 
-                
-                Fluent English 
-                
-                Ability to work in flexible hours 
-                
+            <h3 class="namePosition">QA Engineer</h3>
+            <p class="requirements">Proven experience of 2-3 years in functional testing
+                Experience with validations tools and methodologies
+                ISTQB certified - Advantage
+                Fluent English
+                Ability to work in flexible hours
                 Place of employment: Yeruham</p>
-                <button id="appplyPosition">Apply</button>
+            <button class="contactUs" id="appplyPosition">Apply</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <img class="girl" src="Images/girl.jpg" alt="Open Positions">
         </div>
         <div>
-            <img src="/Images/girl.jpg" alt="Open Positions">
-        </div>
-        <div>
-            <h3>Frontend SW developer </h3>
-            <p>1-2 years work experience in one of the following - React, Angular, C#, Node JS
-
+            <h3 class="namePosition">Frontend SW developer </h3>
+            <p class="requirements">1-2 years work experience in one of the following - React, Angular, C#, Node JS
                 Self learner
-                
                 highly motivate
-                
-                Fluent English 
-                
+                Fluent English
                 Ability to work in flexible hours Place of employment: Yeruham</p>
-                <button id="appplyPosition">Apply</button>
+            <button class="contactUs" id="appplyPosition">Apply</button>
         </div>
     </div>
-    <div>
-        <img src="" alt="">
-        <div>
-            <h2>Example projects</h2>
-            <p>Tech 19 focus is not only on providing our clients with successful solutions to their
-                 problems, but also providing them with a success story that they can tell over and over. </p>
+    </div>
+        <!--projects examples-->
+    <div class="projectExamples">
+        <div class="aboutContainer">
+            <h2 class="aboutUsTitle">Example projects</h2>
+            <p class="projectDescription">Tech 19 focus is not only on providing our clients with successful<br> solutions to their
+                problems, but also providing them with a success story<br> that they can tell over and over. </p>
+            </div>
                 <div>
-                    <div>
-                        <i class="fas fa-mobile"></i>
-                        <p>Build & develop quality solutions to Mobile application of advanced health solutions. 
-                            Tailor quality work processes and tools. </p>
-                    </div>
-                    <div>
-                        <i class="fas fa-mobile"></i>
-                        <p>Lead software quality solutions for web based application that provides predictive 
-                            solutions to virtual coins. </p>
-                    </div>
+                <div class="project1">
+                    <i class="fas fa-5x fa-mobile"></i>
+                    <p class="projectDescription">Build & develop quality solutions to Mobile application of advanced<br> health solutions.
+                        Tailor quality work processes and tools. </p>
                 </div>
-        </div>
+                <div class="project1">
+                    <i class="fas  fa-5x fa-mobile"></i>
+                    <p class="projectDescription">Lead software quality solutions for web based application that provides<br> predictive
+                        solutions to virtual coins. </p>
+                </div>
+            </div>
     </div>
-    <div>
+        <!--contact us-->
+    <div class="contactContainer">
         <div>
-            <h2>GET IN TOUCH</h2>
-            <P>Please fill in the form, and our rep will get back in 30 minutes to schedule a kickoff discussion.</P>
+            <h2 class="openPosition">GET IN TOUCH</h2>
+            <P class="contactDescription">Please fill in the form, and our<br> rep will get back in 30 minutes<br> to schedule a kickoff discussion.</P>
         </div>
-        <div>
-            <form  onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="First name" name="firstName" id="firstName"/>
-                <input type="text" placeholder="Last name" id="lastName" name="lastName"/>
-                <input type="text" placeholder="Email" id="email" name="email"/>
-                <input type="number" placeholder="Phone" id="phone" name="phone"/>
+        <div class="formContainer">
+            <form onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="First name" name="firstName" id="firstName" />
+                <input type="text" placeholder="Last name" id="lastName" name="lastName" />
+                <input type="text" placeholder="Email" id="email" name="email" />
+                <input type="number" placeholder="Phone" id="phone" name="phone" />
                 <textarea name="message" placeholder="Messaage" id="message" name="message"></textarea>
-                <input type="submit" value="Submit"/>
+                <input type="submit" value="Submit" class="contactUs"/>
             </form>
         </div>
     </div>
+        <!--follow us-->
     <div>
-        <h2>FOLLOW US</h2>
-        <a href="https://www.facebook.com/TECH19YERUHAM/?ref=page_internal" class="fab fa-facebook"></a>
-        <a href="https://www.linkedin.com/company/tech19yerucham/?viewAsMember=true" class="fab fa-linkedin"></a>
-        <a href="https://www.instagram.com/tech__19/" class="fab fa-instagram"></a>
+        <div class="solutionsContainer">
+            <p class="solutionProvide">FOLLOW US</p>
+        <a href="https://www.facebook.com/TECH19YERUHAM/?ref=page_internal" class="fab fa-2x fa-facebook"></a>
+        <a href="https://www.linkedin.com/company/tech19yerucham/?viewAsMember=true" class="fab fa-2x fa-linkedin"></a>
+        <a href="https://www.instagram.com/tech__19/" class="fab fa-2x fa-instagram"></a>
     </div>
+</div>
+        <!--footer-->
     <footer>
         <p>© 2022 Tech 19 // All rights reserved.</p>
+        <a class="linkCreatorPage" href="https://www.link19.co.il/">Operated by Link 19</a>
     </footer>
 </body>
-<script src="/index.js"></script>
+<script src="index.js"></script>
 </html>
