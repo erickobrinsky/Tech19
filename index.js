@@ -27,4 +27,3 @@ function isEmail(email) {
     ev.target.reset();
 }
 
-

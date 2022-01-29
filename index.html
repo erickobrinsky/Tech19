@@ -2,12 +2,10 @@
 <html lang="en">
 
 <head>
-
     <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/logo.ico">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -15,168 +13,274 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/scss/app.css">
     <title>Tech 19 | Mechanical 3d Modelling | Israel</title>
-
 </head>
 
 <body>
-        <!--introduction first image-->
-    <div class="section1">
-        <img class="logo" src="Images/logo.jpg" alt="Tech19">
-        <p class="introduction">Tech 19 provides technical innovative solutions in fields of<br>Software, Mechanical
-            design & IT, The company delivers<br>professional services through turnkey end to end solutions<br>with
-            focus on
-            quality and customer satisfaction.
-        </p>
-        <button class="contactUs">CONTACT US</button>
-    </div>
-        <!--about us-->
-    <div class="aboutUs">
-        <h1 class="aboutUsTitle">ABOUT US</h1>
-        <P class="aboutDescription">Tech19 is based in Yeruham, southern Israel, and part of ‘Group 19’<br> initiated by
-            Hana Rado Israeli social entrepreneur.
-            The key objective is<br> to promote outsourcing services from peripheral areas to companies<br> situated in
-            the center
-            region of Israel. Thus, we bring the periphery<br> closer to the center by
-            providing solutions using advanced technologies.</P>
-        <div class="foundersInfo">
-            <div>
-                <img class="founderPic" src="Images/Inbar.jpg" alt="Inbar Cohen">
-                <h2 class="foundersName">Inbar Cohen</h2>
-                <p class="foundersDescription">CEO at Tech19</p>
-            </div>
-            <div>
-                <img class="founderPic" src="Images/Hana.jpg" alt="Hana Rado">
-                <h2 class="foundersName">Hana Rado</h2>
-                <p class="foundersDescription">Founder & President<br> Group 19</p>
+    <!--introduction first image-->
+    <header class="header">
+        <div class="container">
+            <div class="container__header">
+                <div class="container__header__logo">
+                    <img class="logo" src="Images/logo.jpg" alt="Tech19">
+                </div>
+                <div class="container__header__main-introduction">
+
+                    <p>Tech 19 provides technical innovative solutions in fields of Software,
+                        Mechanical design & IT, The company delivers professional services through turnkey end to end
+                        solutions with focus on quality and customer satisfaction.
+                    </p>
+                    <div class="container__header__contactbutton">
+                        <a class="button-principal" href="#contact" role="button">CONTACT US</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-        <!--solutions-->
+    </header>
+    <!--about us-->
+    <section class="about">
+        <div class="container">
+            <div class="container__about">
+                <h1 class="container__about__title">ABOUT US</h1>
+                <P class="aboutDescription">Tech19 is based in Yeruham, southern Israel, and part of ‘Group 19’<br>
+                    initiated by
+                    Hana Rado Israeli social entrepreneur.
+                    The key objective is<br> to promote outsourcing services from peripheral areas to companies<br>
+                    situated in
+                    the center
+                    region of Israel. Thus, we bring the periphery<br> closer to the center by
+                    providing solutions using advanced technologies.</P>
+                <div class="container__about__foundersInfo">
+                    <div class="container__about__foundersInfo__profile">
+                        <img src="Images/Inbar.jpg" alt="Inbar Cohen">
+                        <h2>Inbar Cohen</h2>
+                        <p>CEO at Tech19</p>
+                    </div>
+                    <div class="container__about__foundersInfo__profile">
+                        <img src="Images/Hana.jpg" alt="Hana Rado">
+                        <h2>Hana Rado</h2>
+                        <p>Founder & President<br> Group 19</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--solutions privider-->
     <div class="solutionsContainer">
-        <p class="solutionProvide">SOLUTIONS WE PROVIDE</p>
+        <h2>SOLUTIONS WE PROVIDE</h2>
     </div>
-    <div class="solutions">
-        <div class="service">
-            <i class="fas fa-5x  fa-cog"></i>
-            <h2 class="typeSolution">Mechanical 3d modelling</h2>
-            <ul>
-                <li>Mechanical research</li>
-                <li>Mechanical and electric design</li>
-                <li>Sketches, 3D Models</li>
-                <li>Prototype design and construction</li>
-            </ul>
+    <main class="solutions">
+        <div class="container">
+            <div class="container__service">
+                <div class="container__service__solutions">
+                    <div class="container__service__solutions__icon">
+
+                        <i class="fas fa-5x  fa-cog"></i>
+                    </div>
+                    <div class="container__service__solutions__title">
+
+                        <h2 class="typeSolution">Mechanical 3d modelling</h2>
+                    </div>
+                    <div class="container__service__solutions__list">
+                        <ul>
+                            <li>Mechanical research</li>
+                            <li>Mechanical and electric design</li>
+                            <li>Sketches, 3D Models</li>
+                            <li>Prototype design and construction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container__service__solutions">
+                    <div class="container__service__solutions__icon">
+
+                        <i class="fas fa-5x fa-laptop-code"></i>
+                    </div>
+                    <div class="container__service__solutions__title">
+
+                        <h2 class="typeSolution">SW Development & Testing</h2>
+                    </div>
+
+                    <div class="container__service__solutions__list">
+                        <ul>
+                            <li>Frontend development –<br>
+                                React, C#, Angular
+                            </li>
+                            <li>Automation testing</li>
+                            <li>Quality Assurance</li>
+                            <li>Build and implement QA<br> methodology & processes</li>
+                            <li>Functional testing</li>
+                            <li>Performance testing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container__service__solutions">
+                    <div class="container__service__solutions__icon">
+
+                        <i class="fas fa-5x fa-headphones-alt"></i>
+                    </div>
+                    <div class="container__service__solutions__title">
+
+                        <h2 class="typeSolution">IT Support</h2>
+                    </div>
+                    <div class="container__service__solutions__list">
+
+                        <ul>
+                            <li>Network operation center (NOC)</li>
+                            <li>Monitoring services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="service">
-            <i class="fas fa-5x fa-laptop-code"></i>
-            <h2 class="typeSolution">SW Development & Testing</h2>
-            <ul>
-                <li>Frontend development –<br>
-                    React, C#, Angular
-                </li>
-                <li>Automation testing</li>
-                <li>Quality Assurance</li>
-                <li>Build and implement QA<br> methodology & processes</li>
-                <li>Functional testing</li>
-                <li>Performance testing</li>
-            </ul>
-        </div>
-        <div class="service">
-            <i class="fas fa-5x fa-headphones-alt"></i>
-            <h2 class="typeSolution">IT Support</h2>
-            <ul>
-                <li>Network operation center (NOC)</li>
-                <li>Monitoring services</li>
-            </ul>
-        </div>
-    </div>
+    </main>
+
     <!--open positions-->
-    <div class="positionContainer">
-       <div>
-        <div class="container1">
-            <h2 class="openPosition">Open positions</h2>
-            <p class="motivation">Are you ready to shape the world of software innovative solutions with us? Join the Tech 19 to be
-                a part of a team where you can make a difference!</p>
-        </div>
-        <div>
-            <h3 class="namePosition">QA Engineer</h3>
-            <p class="requirements">Proven experience of 2-3 years in functional testing
-                Experience with validations tools and methodologies
-                ISTQB certified - Advantage
-                Fluent English
-                Ability to work in flexible hours
-                Place of employment: Yeruham</p>
-            <button class="contactUs" id="appplyPosition">Apply</button>
-        </div>
-    </div>
-    <div>
-        <div>
-            <img class="girl" src="Images/girl.jpg" alt="Open Positions">
-        </div>
-        <div>
-            <h3 class="namePosition">Frontend SW developer </h3>
-            <p class="requirements">1-2 years work experience in one of the following - React, Angular, C#, Node JS
-                Self learner
-                highly motivate
-                Fluent English
-                Ability to work in flexible hours Place of employment: Yeruham</p>
-            <button class="contactUs" id="appplyPosition">Apply</button>
-        </div>
-    </div>
-    </div>
-        <!--projects examples-->
-    <div class="projectExamples">
-        <div class="aboutContainer">
-            <h2 class="aboutUsTitle">Example projects</h2>
-            <p class="projectDescription">Tech 19 focus is not only on providing our clients with successful<br> solutions to their
-                problems, but also providing them with a success story<br> that they can tell over and over. </p>
-            </div>
-                <div>
-                <div class="project1">
-                    <i class="fas fa-5x fa-mobile"></i>
-                    <p class="projectDescription">Build & develop quality solutions to Mobile application of advanced<br> health solutions.
-                        Tailor quality work processes and tools. </p>
+    <section class="position">
+        <div class="container">
+            <div class="container__introduction">
+                <div class="container__introduction__left">
+                    <div class="container__introduction__left__main">
+                        <div class="container__introduction__left__main__title">
+                            <h2>Open positions</h2>
+                        </div>
+                        <div class="container__introduction__left__main__intro">
+                            <p>Are you ready to shape the world of software innovative solutions with us?
+                                Join
+                                the Tech 19 to be
+                                a part of a team where you can make a difference!</p>
+                        </div>
+                    </div>
+                    <div class="container__introduction__left__main__position">
+                        <div class="container__introduction__left__main__position__title">
+                            <h3>QA Engineer</h3>
+                        </div>
+                        <div class="container__introduction__left__main__position__description">
+                            <p>Proven experience of 2-3 years in functional testing
+                                Experience with validations tools and methodologies
+                                ISTQB certified - Advantage
+                                Fluent English
+                                Ability to work in flexible hours
+                                Place of employment: Yeruham</p>
+                            <a role="button" class="button-principal" href="mailto:inbar.n.cohen@gmail.com">Apply</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project1">
-                    <i class="fas  fa-5x fa-mobile"></i>
-                    <p class="projectDescription">Lead software quality solutions for web based application that provides<br> predictive
-                        solutions to virtual coins. </p>
+                <div class="container__introduction__right__main">
+                    <div class="container__introduction__right__main__image">
+                        <img src="Images/girl.jpg" alt="Open Positions">
+                    </div>
+                    <div class="container__introduction__right__main__position">
+                        <div class="container__introduction__right__main__position__title">
+                            <h3>Frontend SW developer </h3>
+                        </div>
+                        <div class="container__introduction__right__main__position__description">
+                            <p>1-2 years work experience in one of the following - React, Angular, C#,
+                                Node
+                                JS
+                                Self learner
+                                highly motivate
+                                Fluent English
+                                Ability to work in flexible hours Place of employment: Yeruham</p>
+                            <a class="button-principal" role="button" href="mailto:inbar.n.cohen@gmail.com">Apply</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-    </div>
-        <!--contact us-->
-    <div class="contactContainer">
-        <div>
-            <h2 class="openPosition">GET IN TOUCH</h2>
-            <P class="contactDescription">Please fill in the form, and our<br> rep will get back in 30 minutes<br> to schedule a kickoff discussion.</P>
+
+            <div class="project">
+                <div class="project__about">
+                    <div class="project__about__title">
+                        <h2>Example projects</h2>
+                    </div>
+                    <div class="project__about__description">
+                        <p>Tech 19 focus is not only on providing our clients with
+                            successful<br>
+                            solutions to their
+                            problems, but also providing them with a success story<br> that they can tell over and
+                            over. </p>
+                    </div>
+                </div>
+                <div class="project__type">
+                    <div class="project__type__project1">
+                        <div class="project__type__project1__icon">
+                            <i class="fas fa-5x  fa-cog"></i>
+                        </div>
+                        <div class="project__type__project1__description">
+                            <p>Build & develop quality solutions to Mobile application of
+                                advanced<br>
+                                health solutions.
+                                Tailor quality work processes and tools. </p>
+                        </div>
+                    </div>
+                    <div class="project__type__project1">
+                        <div class="project__type__project1__icon">
+                            <i class="fas fa-4x fa-laptop-code"></i>
+                        </div>
+                        <div class="project__type__project1__description">
+                            <p>Lead software quality solutions for web based application
+                                that
+                                provides<br> predictive
+                                solutions to virtual coins. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="formContainer">
-            <form onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="First name" name="firstName" id="firstName" />
-                <input type="text" placeholder="Last name" id="lastName" name="lastName" />
-                <input type="text" placeholder="Email" id="email" name="email" />
-                <input type="number" placeholder="Phone" id="phone" name="phone" />
-                <textarea name="message" placeholder="Messaage" id="message" name="message"></textarea>
-                <input type="submit" value="Submit" class="contactUs"/>
-            </form>
+    </section>
+    <!--contact us-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="container__containercontact">
+                <h2>GET IN TOUCH</h2>
+                <div class="container__containercontact__contact">
+                    <div class="container__containercontact__contact__title">
+                    </div>
+                    <div class="container__containercontact__contact__flex">
+                        <div class="container__containercontact__contact__flex__form">
+                            <form onsubmit="handleSubmit(event)" action="mailto:inbar.n.cohen@gmail.com">
+                                <input type="text" placeholder="First name" name="firstName" id="firstName" />
+                                <input type="text" placeholder="Last name" id="lastName" name="lastName" />
+                                <input type="text" placeholder="Email" id="email" name="email" />
+                                <input type="text" placeholder="Phone" id="phone" name="phone" />
+                                <textarea name="message" placeholder="Messaage" id="message" name="message"></textarea>
+                                <button type="submit" value="Submit" class="button-principal">Submit</button>
+                            </form>
+                        </div>
+                        <div class="container__containercontact__contact__flex__description">
+                            <P>Please fill in the form, and our<br> rep will get back in 30
+                                minutes<br>
+                                to schedule a kickoff discussion.</P>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <div class="footer">
+
+        <div class="footer__containerfooter">
+            <div class="footer__containerfooter__follow">
+                <div class="footer__containerfooter__follow__banner">
+                    <h2>FOLLOW US</h2>
+                </div>
+                <div class="footer__containerfooter__follow__icons">
+                    <a href="https://www.facebook.com/TECH19YERUHAM/?ref=page_internal"
+                        class="fab fa-2x fa-facebook"></a>
+                    <a href="https://www.linkedin.com/company/tech19yerucham/?viewAsMember=true"
+                        class="fab fa-2x fa-linkedin"></a>
+                    <a href="https://www.instagram.com/tech__19/" class="fab fa-2x fa-instagram"></a>
+                </div>
+            </div>
+            <div class="footer__containerfooter__rightreservation">
+                <p>© 2022 Tech 19 // All rights reserved.</p>
+                <a href="https://www.link19.co.il/">Operated by Link 19</a>
+            </div>
         </div>
     </div>
-        <!--follow us-->
-    <div>
-        <div class="solutionsContainer">
-            <p class="solutionProvide">FOLLOW US</p>
-        <a href="https://www.facebook.com/TECH19YERUHAM/?ref=page_internal" class="fab fa-2x fa-facebook"></a>
-        <a href="https://www.linkedin.com/company/tech19yerucham/?viewAsMember=true" class="fab fa-2x fa-linkedin"></a>
-        <a href="https://www.instagram.com/tech__19/" class="fab fa-2x fa-instagram"></a>
-    </div>
-</div>
-        <!--footer-->
-    <footer>
-        <p>© 2022 Tech 19 // All rights reserved.</p>
-        <a class="linkCreatorPage" href="https://www.link19.co.il/">Operated by Link 19</a>
-    </footer>
 </body>
 <script src="index.js"></script>
+
 </html>
