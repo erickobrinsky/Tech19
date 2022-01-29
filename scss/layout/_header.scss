@@ -1,0 +1,52 @@
+.header {
+	background-image: url(../Tech19/Images/tech19First.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 1563px;
+
+	@include phone {
+		height: 100vh;
+	}
+}
+
+.container {
+	&__header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+
+		&__logo {
+			width: 548px;
+			height: 236px;
+			margin-right: 17rem;
+
+			@include phone {
+				width: 250px;
+				height: 150px;
+			}
+		}
+
+		&__main-introduction {
+			font-family: $font_main;
+			font-size: 2rem;
+			line-height: 28px;
+			color: $white;
+			margin-left: 35rem;
+			@include phone {
+				margin: 0;
+				width: 100%;
+			}
+			p {
+				margin: 0;
+
+				width: 60%;
+				@include phone {
+					font-size: 1.3rem;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

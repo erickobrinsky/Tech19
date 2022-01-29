@@ -1,0 +1,70 @@
+.about {
+	background-image: url(../Tech19/Images/about.jpg);
+	background-size: cover;
+}
+
+.container {
+	&__about {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&__title {
+			font-family: $font_main;
+			font-size: 30px;
+			line-height: 49px;
+			text-decoration: none solid rgb(0, 10, 68);
+			word-spacing: 0px;
+			border-bottom: 3px solid $pink;
+			color: $blue;
+			height: auto;
+			width: auto;
+			display: inline;
+		}
+
+		&__foundersInfo {
+			@include phone {
+				gap: 7rem;
+			}
+			display: flex;
+			justify-content: center;
+			gap: 15rem;
+			margin-top: 2rem;
+
+			&__profile {
+				display: flex;
+				flex-direction: column;
+
+				img {
+					border-radius: 50%;
+					height: 124px;
+					width: 125px;
+					@include phone {
+						height: 115px;
+						width: 116px;
+					}
+				}
+				p {
+					font-size: 16px;
+					color: #000000;
+					display: block;
+					line-height: 22.4px;
+					font-family: $font_main;
+				}
+				h2 {
+					font-family: $font_main;
+					font-size: 15px;
+					line-height: 49px;
+					text-decoration: none solid rgb(0, 10, 68);
+					word-spacing: 0px;
+					border-bottom: 3px solid #ad2069;
+					color: #000a44;
+					height: auto;
+					width: auto;
+					display: inline;
+				}
+			}
+		}
+	}
+}

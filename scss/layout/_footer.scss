@@ -1,0 +1,46 @@
+.footer {
+	&__containerfooter {
+		&__follow {
+			display: flex;
+			background-color: $blue;
+			align-items: center;
+			gap: 2rem;
+			margin: 0 auto;
+			justify-content: center;
+			&__banner {
+				h2 {
+					color: $white;
+					font-family: $font_main;
+					font-size: 3rem;
+					line-height: 110px;
+					word-spacing: 0px;
+					line-height: 100px;
+				}
+			}
+
+			&__icons {
+				a {
+					color: $pink;
+					padding: 0.5rem;
+				}
+				a:hover {
+					cursor: pointer;
+					opacity: 0.5;
+				}
+			}
+		}
+
+		&__rightreservation {
+			text-align: center;
+			font-family: $font_main;
+			margin-bottom: 2rem;
+
+			a,
+			p {
+				color: $blue;
+				font-size: 1.5rem;
+				margin-bottom: 0.6rem;
+			}
+		}
+	}
+}

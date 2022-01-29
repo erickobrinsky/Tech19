@@ -1,0 +1,101 @@
+.contact {
+	background: url(../Tech19/Images/contact.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 678px;
+}
+
+.container {
+	&__containercontact {
+		h2 {
+			text-align: center;
+			font-family: $font_main;
+			font-size: 25px;
+			line-height: 49px;
+			text-decoration: none solid rgb(0, 10, 68);
+			word-spacing: 0px;
+
+			color: $blue;
+		}
+		&__contact {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			@include phone {
+				display: block;
+			}
+
+			&__flex {
+				display: flex;
+				gap: 4rem;
+				@include phone {
+					display: block;
+				}
+				&__form {
+					margin-top: 5rem;
+					display: block;
+					flex-direction: column;
+					width: 300px;
+
+					input {
+						display: block;
+						min-height: 42px;
+						max-width: 100%;
+						background-color: $white;
+						
+						padding: 1.5rem;
+						cursor: text;
+						width: 301px;
+						height: 41.992px;
+						display: inline-block;
+						margin-bottom: 2rem;
+						text-decoration: none solid rgb(89, 89, 89);
+						line-height: 19.6px;
+						word-spacing: 0px;
+						text-align: left;
+						border-radius: 1rem;
+						border: 0;
+						font-family: $font_main;
+					}
+					textarea {
+						height: 123px;
+						width: 301px;
+						white-space: pre-wrap;
+						border-radius: 1rem;
+						padding: 1.5rem;
+						border: 0;
+						font-family: $font_main;
+						resize: none;
+						overflow: auto;
+						outline: none;
+					}
+
+					button {
+						width: 301px;
+						font-size: 2rem;
+					}
+				}
+				&__description {
+					margin-top: 1.7rem;
+					display: block;
+					width: 550px;
+					@include phone {
+						width: 100%;
+					}
+
+					p {
+						font-size: 3rem;
+						line-height: 28px;
+						color: $blue;
+						font-family: $font_main;
+						@include phone {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

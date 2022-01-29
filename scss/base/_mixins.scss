@@ -1,0 +1,33 @@
+//media queries responsive
+@mixin phone {
+    @media (max-width: #{$phone}) {
+        @content
+    }
+};
+
+@mixin grid($columns, $spaces){
+    display: grid;
+    gap:$spaces;
+    grid-template-columns: repeat($columns,1fr);
+}
+
+//buttons
+@mixin button($bgColor, $display){
+    background-color:$bgColor;
+    color: $white;
+    font-weight:$bold;
+    text-decoration: none;
+    padding: 1rem 2rem ;
+    text-align: center;
+    margin-top: 1rem;
+    display: $display;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    &:hover{
+        background-color:$white;
+        cursor: pointer;
+        color: $pink;
+    } 
+
+}
