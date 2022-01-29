@@ -3,13 +3,13 @@
 
 function sendEmail(){
   Email.send({
-    SecureToken: "ed045644-05bc-4c50-b432-ff1f6223c0f7",
-    To : 'kobrinskye@gmail.com',
-    From : document.getElementById('email').value,
-    Subject : "New content from website",
+    SecureToken: "e5c0a6a0-8f7b-48e5-88d9-5e17e96c2d78",
+    To: "kobrinskye@gmail.com",
+    From: "kobrinskye@gmail.com",
+    Subject: "New content from website",
     Body : "Firstname: " + document.getElementById('firstName').value
-     + "<br> Email: " + document.getElementById('email').value
      + "<br> Lastname: " + document.getElementById('lastName').value
+     + "<br> Email: " + document.getElementById('email').value
      + "<br> Phone: " + document.getElementById('phone').value
      + "<br> Message: " + document.getElementById('message').value
 }).then(
