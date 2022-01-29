@@ -1,29 +1,18 @@
-const firstName = document.getElementById('firstName');
-const lastName = document.getElementById('lastName');
-const email = document.getElementById('email');
-const phone = document.getElementById('phone');
-const message = document.getElementById('message');
 
 
 
-//checking if a string is an email 
-
-function isEmail(email) {
-    let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-    return regex.test(String(email).toLowerCase());
-   }
-
-
-   function handleSubmit(ev) {
-    ev.preventDefault()
-   
-    const firstName = ev.target.firstName.value;
-    const lastName = ev.target.lastName.value;
-    const email = ev.target.email.value;
-    const phone = ev.target.phone.value;
-    const message = ev.target.message.value
-    console.log(firstName)
-    console.log(lastName);
-    ev.target.reset();
+function sendEmail(){
+  Email.send({
+    SecureToken: "ed045644-05bc-4c50-b432-ff1f6223c0f7",
+    To : 'kobrinskye@gmail.com',
+    From : document.getElementById('email').value,
+    Subject : "New content from website",
+    Body : "Firstname: " + document.getElementById('firstName').value
+     + "<br> Email: " + document.getElementById('email').value
+     + "<br> Lastname: " + document.getElementById('lastName').value
+     + "<br> Phone: " + document.getElementById('phone').value
+     + "<br> Message: " + document.getElementById('message').value
+}).then(
+  message => alert('Message sent successfully.')
+);
 }
-

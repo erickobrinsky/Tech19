@@ -238,7 +238,7 @@
                     </div>
                     <div class="container__containercontact__contact__flex">
                         <div class="container__containercontact__contact__flex__form">
-                            <form onsubmit="handleSubmit(event)" action="mailto:inbar.n.cohen@gmail.com">
+                            <form id="my-form" onsubmit="sendEmail(); reset(); return false;";>
                                 <input type="text" placeholder="First name" name="firstName" id="firstName" />
                                 <input type="text" placeholder="Last name" id="lastName" name="lastName" />
                                 <input type="text" placeholder="Email" id="email" name="email" />
@@ -281,6 +281,6 @@
         </div>
     </div>
 </body>
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
 <script src="index.js"></script>
-
 </html>
