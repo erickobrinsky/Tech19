@@ -930,6 +930,13 @@ h3 {
   height: 678px;
 }
 
+.overlay {
+  background: -webkit-gradient(linear, left bottom, right top, from(#000A44));
+  background: linear-gradient(to top right, #000A44);
+  opacity: 0.5;
+  height: 678px;
+}
+
 .container__containercontact h2 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -938,7 +945,7 @@ h3 {
   -webkit-text-decoration: none solid #000a44;
           text-decoration: none solid #000a44;
   word-spacing: 0px;
-  color: #000A44;
+  color: #ffffff;
 }
 
 .container__containercontact__contact {
@@ -1053,7 +1060,7 @@ h3 {
 .container__containercontact__contact__flex__description p {
   font-size: 3rem;
   line-height: 28px;
-  color: #000A44;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
 

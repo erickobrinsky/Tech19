@@ -7,8 +7,18 @@
 	height: 678px;
 }
 
+.overlay{
+	background: linear-gradient(to top right, $blue);
+	opacity: 0.5;
+	height: 678px;
+}
 .container {
+
+
+
 	&__containercontact {
+		
+
 		h2 {
 			text-align: center;
 			font-family: $font_main;
@@ -16,8 +26,8 @@
 			line-height: 49px;
 			text-decoration: none solid rgb(0, 10, 68);
 			word-spacing: 0px;
-
-			color: $blue;
+			color: $white;
+		
 		}
 		&__contact {
 			display: flex;
@@ -97,7 +107,7 @@
 					p {
 						font-size: 3rem;
 						line-height: 28px;
-						color: $blue;
+						color: $white;
 						font-family: $font_main;
 						@include phone {
 							font-size: 2rem;
