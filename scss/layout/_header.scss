@@ -17,16 +17,51 @@
 		align-items: center;
 		justify-content: flex-end;
 
+		#sec {
+			display: inline-block;
+			position: relative;
+			padding-bottom: 4px;
+			margin-bottom: 20px;
+			
+		  };
+		
+		  
+		  #sec:after {
+			content: '';
+			display: block;
+			margin: auto;
+			height: 4px;
+			width: 0px;
+			background: $pink;  
+			animation-name: border;
+			animation-duration: 1s;
+			animation-delay: 2s;
+			animation-fill-mode: none;
+			
+		  };
+		  @-webkit-keyframes border {
+			to {width:40%};
+			from {width: 0px;};
+		
+	   }
+	
 		&__logo {
 			width: 548px;
 			height: 236px;
 			margin-right: 17rem;
+			
+			
 
 			@include phone {
 				width: 250px;
 				height: 150px;
 			}
+
+			
+			
+	
 		}
+	
 
 		&__main-introduction {
 			font-family: $font_main;
@@ -50,3 +85,5 @@
 		}
 	}
 }
+
+
